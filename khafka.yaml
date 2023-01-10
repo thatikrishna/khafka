@@ -21,7 +21,7 @@
     
     - name: Unarchiving the kafka files
       ansible.builtin.unarchive:
-        src: /home/krish/kafka_2.13-3.3.1.tgz/
+        src: /home/krish/kafka_2.13-3.3.1.tgz
         dest: /usr/local/kafka
         remote_src: yes
 
