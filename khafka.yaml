@@ -23,5 +23,6 @@
       ansible.builtin.unarchive:
         src: /home/krish/kafka_2.13-3.2.0.tgz/
         dest: /usr/local/kafka 
+        remote_src: yes
 
       
