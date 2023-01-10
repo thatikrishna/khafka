@@ -12,7 +12,7 @@
     - name: download the khafka tar files
       ansible.builtin.get_url:
         url: https://dlcdn.apache.org/kafka/3.2.0/kafka_2.13-3.2.0.tgz 
-        dest: /home/krish
+        dest: /home/krish/
 
     - name: Creating a destination folder for kafka files
       ansible.builtin.file:
