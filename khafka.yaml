@@ -8,4 +8,20 @@
         update_cache: true
         name: default-jdk 
         state: present
+    
+    - name: download the khafka tar files
+      ansible.builtin.get_url:
+        url: https://dlcdn.apache.org/kafka/3.2.0/kafka_2.13-3.2.0.tgz 
+        dest: /home/krish
+
+    - name: Creating a destination folder for kafka files
+      ansible.builtin.file:
+        path: /usr/local/kafka 
+        state: directory
+    
+    - name: Unarchiving the kafka files
+      ansible.builtin.unarchive:
+        src: /home/krish/kafka_2.13-3.2.0.tgz/
+        dest: /usr/local/kafka 
+
       
