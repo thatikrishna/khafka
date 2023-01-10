@@ -1,0 +1,11 @@
+---
+- name: Installing Kafka
+  hosts: all
+  become: true
+  tasks:
+    - name: update the package
+      ansible.builtin.apt:
+        update_cache: true
+        name: default-jdk 
+        state: present
+      
