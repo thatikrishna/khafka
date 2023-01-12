@@ -44,7 +44,7 @@
 
     - name: Creating partition for kafka topics
       ansible.builtin.script: 
-        chdir: /usr/local/kafka/kafka_2.13-3.3.1
+        chdir: /usr/local/kafka/kafka_2.13-3.3.1/
         cmd: "bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic {{item}}"
       loop: "{{topic}}" 
       register: name_of_topic
