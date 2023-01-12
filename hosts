@@ -1,4 +1,4 @@
-20.124.29.24  service='["zookeeper", "kafka"]'
+20.124.29.24  service='["zookeeper", "kafka"]' topic='["topic1", "topic2", "topic3"]
 
 
 
